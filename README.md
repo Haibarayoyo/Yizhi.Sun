@@ -12,7 +12,7 @@
 - 🎓 本科：西交利物浦大学｜应用数学专业｜大二
 - 📚 硬核基础：数学分析、高等线性代数、多元微积分、概率论与数理统计--- GPA：4.0
 - 🧠 能力标签：数学基础扎实｜代码实现｜英文文献阅读｜科研态度严谨| 自学能力强
-- 📩 Contact：**Yizhi.Sun24@student.xjtlu.edu.cn**
+- 📩 联系方式：**Yizhi.Sun24@student.xjtlu.edu.cn**
 
 ## ⚙️ 技术栈
 <div align="left">
