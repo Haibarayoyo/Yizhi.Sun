@@ -42,7 +42,3 @@
 愿意踏实投入长期科研，积极学习前沿方法，完成论文复现与创新研究。
 
 ---
-
-<div align="center">
-*Strive for knowledge, pursue rigor, keep improving.*
-</div>
