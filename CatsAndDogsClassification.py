@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import os
 import random
 import pandas as pd
@@ -19,10 +16,6 @@ print(len(petlist))
 random.shuffle(petlist)
 df = pd.DataFrame(petlist, columns=['Images','label'])
 df.to_csv("output.csv", index=False)
-
-
-# In[ ]:
-
 
 import os
 import time
@@ -69,10 +62,6 @@ class CatsAndDogsDataset(Dataset):
 
         return image, y_label
 
-
-# In[ ]:
-
-
 def create_dataset():
     total_len = len(pd.read_csv('/root/PetImages/output.csv'))
     transform = transforms.Compose([
@@ -88,10 +77,6 @@ def create_dataset():
     train_loader = DataLoader(train_dataset,batch_size=30,shuffle=True)
     test_loader = DataLoader(test_dataset,batch_size=1000,shuffle=False)
     return train_loader, test_loader
-
-
-# In[ ]:
-
 
 class Catagory(nn.Module):
     def __init__(self):
@@ -119,10 +104,6 @@ class Catagory(nn.Module):
         x = self.linear2(x)
         return x
 
-
-# In[ ]:
-
-
 def train(train_loader):
     model = Catagory()
     model = model.cuda()
@@ -146,15 +127,7 @@ def train(train_loader):
               f'time:{time.time() - start:.5f}')
         torch.save(model.state_dict(), 'model_2.pth')
 
-
-# In[ ]:
-
-
 torch.cuda.empty_cache()
-
-
-# In[ ]:
-
 
 def evaluate(test_loader):
     model = Catagory()
